@@ -1,8 +1,9 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Link } from "react-router-dom";
 
 const navigation = [
-	{ name: "Moi", href: "#me", current: true },
+	{ name: "Moi", href: "#about", current: true },
 	{ name: "Compétences", href: "#competences", current: false },
 	{ name: "Expériences", href: "#xp", current: false },
 	{ name: "Portfolio", href: "#portfolio", current: false },
@@ -34,24 +35,24 @@ export default function Example() {
 								</Disclosure.Button>
 							</div>
 							<div className="flex-1 flex items-center justify-center sm:items-stretch">
-								<div className="flex-shrink-0 flex items-center">
+								{/* <div className="flex-shrink-0 flex items-center">
 									<img
 										className="block lg:hidden h-8 w-auto"
 										src="jd.png"
 										alt="Logo initiale Julie Desvaux"
 									/>
-									{/* <img
+									<img
 										className="hidden lg:block h-8 w-auto"
 										src="jd.png"
 										alt="Logo initiale Julie Desvaux"
-									/> */}
-								</div>
+									/>
+								</div> */}
 								<div className="hidden sm:block sm:ml-6">
 									<div className="flex space-x-4">
 										{navigation.map((item) => (
-											<a
+											<Link
 												key={item.name}
-												href={item.href}
+												to={item.href}
 												className={classNames(
 													item.current
 														? "bg-white text-blue font-bold"
@@ -61,7 +62,7 @@ export default function Example() {
 												aria-current={item.current ? "page" : undefined}
 											>
 												{item.name}
-											</a>
+											</Link>
 										))}
 									</div>
 								</div>
