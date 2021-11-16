@@ -8,6 +8,11 @@ module.exports = {
 				navyBlue: "#05445E",
 			},
 		},
+		letterSpacing: {
+			wide: ".18rem",
+			widest: ".25rem",
+		},
+		animation: ["motion-reduce"],
 	},
 	variants: {
 		extend: {},
