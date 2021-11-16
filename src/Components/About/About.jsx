@@ -9,7 +9,7 @@ function About() {
 
 	return (
 		<section id="about" className="bg-blue px-5 py-4 md:py-8 text-white text-center">
-			<div className="h-screen">
+			<div className="h-screen pt-8">
 				<div className="w-3/4 md:w-1/4 mx-auto py-4">
 					<img src="/me.jpg" alt="Photo de Julie Desvaux" className="rounded-full mx-auto" />
 				</div>
@@ -49,7 +49,7 @@ function About() {
 					<span>Télécharger CV</span>
 				</button>
 			</div>
-			<div className="px-16 text-left">
+			<div className="py-6 md:py-8 px-2 md:px-16 text-left">
 				<p className="pb-4">
 					Après 10 ans dans le secteur de la logistique où j'ai appris à développer des outils informatiques
 					d'analyses sous VisualBasic, j'ai découvert que le développement me passionnais.J'ai donc décidé de

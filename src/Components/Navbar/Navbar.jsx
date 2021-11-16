@@ -3,8 +3,8 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-router-dom";
 
 const navigation = [
-	{ name: "Moi", href: "#about", current: true },
-	{ name: "Compétences", href: "#competences", current: false },
+	{ name: "A propos", href: "#about", current: true },
+	{ name: "Compétences", href: "#skills", current: false },
 	{ name: "Expériences", href: "#xp", current: false },
 	{ name: "Portfolio", href: "#portfolio", current: false },
 	{ name: "Education", href: "#education", current: false },
@@ -18,7 +18,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
 	return (
-		<Disclosure as="nav" className="bg-blue border-b-2 border-gray-200">
+		<Disclosure as="nav" className="w-full bg-blue border-b-2 border-gray-200 fixed">
 			{({ open }) => (
 				<>
 					<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">

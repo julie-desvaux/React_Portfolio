@@ -2,7 +2,7 @@ import { render, screen, fireEvent } from "@testing-library/react";
 
 import About from "./About";
 
-test("renders julie desvaux", () => {
+test("renders button for download cv", () => {
 	render(<About />);
 	const linkElement = screen.getByText(/julie desvaux/i);
 	expect(linkElement).toBeInTheDocument();

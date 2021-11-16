@@ -12,13 +12,13 @@ it("should display links", () => {
 			<Navbar />
 		</Router>
 	);
-	const linkMoi = getByText(/moi/i);
+	const linkMoi = getByText(/a propos/i);
 	expect(linkMoi).toBeInTheDocument();
 	expect(linkMoi).toHaveAttribute("href", "/#about");
 
 	const linkCompetences = getByText(/compétences/i);
 	expect(linkCompetences).toBeInTheDocument();
-	expect(linkCompetences).toHaveAttribute("href", "/#competences");
+	expect(linkCompetences).toHaveAttribute("href", "/#skills");
 
 	const linkXP = getByText(/expériences/i);
 	expect(linkXP).toBeInTheDocument();
