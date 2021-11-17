@@ -70,7 +70,10 @@ function Skills() {
 						<img className="w-1/2 mx-auto" src="/skills/git.png" alt="Logo Git" />
 					</div>
 					<div className="mb-10 md:mb-16 md:mx-10">
-						<img className="w-1/2 mx-auto" src="/skills/vba.png" alt="Logo VisualBasic" />
+						<img className="w-1/2 mx-auto" src="/skills/gitlab.png" alt="Logo Gitlab" />
+					</div>
+					<div className="mb-10 md:mb-16 md:mx-10">
+						<img className="w-1/2 mx-auto" src="/skills/github.png" alt="Logo Github" />
 					</div>
 				</div>
 			</div>

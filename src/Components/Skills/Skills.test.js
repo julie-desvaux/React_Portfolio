@@ -20,7 +20,8 @@ test("renders images for skills", () => {
 		"Logo Postgresql",
 		"Logo My SQL",
 		"Logo Git",
-		"Logo VisualBasic",
+		"Logo Gitlab",
+		"Logo Github",
 	];
 	render(<Skills />);
 	const images = screen.getAllByRole("img");
