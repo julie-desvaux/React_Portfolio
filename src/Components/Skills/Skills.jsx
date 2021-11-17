@@ -4,7 +4,7 @@ function Skills() {
 	return (
 		<section id="skills" className="pt-16 text-center">
 			<div className="blue-divider w-24 h-1 bg-blue mx-auto"></div>
-			<h2 className="my-2 uppercase ">Compétences</h2>
+			<h2 className="my-2 uppercase text-blue">Compétences</h2>
 			<div className="mt-16">
 				<div className="flex flex-col md:flex-row justify-center items-center">
 					<div className="mb-10 md:mb-16 md:mx-10">

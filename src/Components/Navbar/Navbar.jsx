@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const navigation = [
 	{ name: "A propos", href: "#about", current: true },
 	{ name: "Compétences", href: "#skills", current: false },
-	{ name: "Expériences", href: "#xp", current: false },
 	{ name: "Portfolio", href: "#portfolio", current: false },
+	{ name: "Expériences", href: "#xp", current: false },
 	{ name: "Education", href: "#education", current: false },
 	{ name: "Mooc", href: "#mooc", current: false },
 	{ name: "Bénévolat", href: "#benevolat", current: false },
@@ -18,7 +18,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
 	return (
-		<Disclosure as="nav" className="w-full bg-blue border-b-2 border-gray-200 fixed">
+		<Disclosure as="nav" className="w-full bg-blue border-b-2 border-gray-200 fixed z-50">
 			{({ open }) => (
 				<>
 					<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -55,7 +55,7 @@ export default function Navbar() {
 												to={item.href}
 												className={classNames(
 													item.current
-														? "bg-white text-blue font-bold"
+														? "bg-gray-200 text-blue font-bold"
 														: "text-gray-200 hover:bg-navyBlue hover:text-white font-medium",
 													"px-3 py-2 rounded-md text-sm font-medium uppercase tracking-wide"
 												)}
@@ -79,7 +79,7 @@ export default function Navbar() {
 									href={item.href}
 									className={classNames(
 										item.current
-											? "bg-gray-900 text-white"
+											? "bg-gray-200 text-blue"
 											: "text-gray-300 hover:bg-gray-700 hover:text-white",
 										"block px-3 py-2 rounded-md text-base font-medium"
 									)}

@@ -28,3 +28,128 @@
 .sass {
 	background-color: #cf649a;
 }
+
+/* ---------- EXPERIENCES ---------- */
+
+#experiences .text-muted {
+	color: #a9a9a9 !important;
+}
+.timeline:before {
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	content: " ";
+	width: 5px;
+	background: #696969;
+	left: 50%;
+	margin-left: -2.5px;
+}
+.timeline li {
+	margin-bottom: 20px;
+	position: relative;
+}
+.timeline > li:after {
+	clear: both;
+}
+.timeline > li:before,
+.timeline > li:after {
+	content: " ";
+	display: table;
+}
+.timeline li .timeline-badge {
+	top: 16px;
+	left: 50%;
+	margin-left: -25px;
+}
+.timeline-panel-container {
+	width: 50%;
+	float: left;
+}
+.timeline-panel-container-inverted {
+	width: 50%;
+	float: right;
+}
+.timeline-panel {
+	width: 90%;
+	float: right;
+	margin-right: 40px;
+}
+.timeline-panel-container-inverted .timeline-panel {
+	float: left;
+	margin-left: 40px;
+}
+.timeline-panel:after {
+	position: absolute;
+	top: 27px;
+	right: -14px;
+	display: inline-block;
+	border-top: 14px solid transparent;
+	border-left: 14px solid #005873;
+	border-right: 0 solid #005873;
+	border-bottom: 14px solid transparent;
+	content: " ";
+}
+.timeline-panel-container-inverted .timeline-panel:after {
+	border-left-width: 0;
+	border-right-width: 14px;
+	left: -14px;
+	right: auto;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media screen and (max-device-width: 1024px) {
+	/* ---------- EXPERIENCES ---------- */
+	.timeline:before {
+		left: 95%;
+	}
+	.timeline li {
+		margin-bottom: 20px;
+		position: relative;
+	}
+	.timeline > li:after {
+		clear: both;
+	}
+	.timeline > li:before,
+	.timeline > li:after {
+		content: " ";
+		display: table;
+	}
+	.timeline li .timeline-badge {
+		left: 95%;
+		margin-left: -16px;
+	}
+	.timeline-panel-container {
+		width: 100%;
+		float: left;
+		margin-left: -15px;
+	}
+	.timeline-panel-container-inverted {
+		width: 100%;
+		float: left;
+	}
+	.timeline-panel {
+		width: 90%;
+		float: left;
+		margin-right: 10px;
+	}
+	.timeline-panel-container-inverted .timeline-panel {
+		float: left;
+		margin-left: -15px;
+	}
+	.timeline-panel:after {
+		position: absolute;
+		top: 27px;
+		right: -14px;
+		display: inline-block;
+		border-top: 14px solid transparent;
+		border-left: 14px solid #005873;
+		border-right: 0 solid #005873;
+		border-bottom: 14px solid transparent;
+		content: " ";
+	}
+	.timeline-panel-container-inverted .timeline-panel:after {
+		border-right-width: 0;
+		border-left-width: 14px;
+		left: 100%;
+	}
+}
