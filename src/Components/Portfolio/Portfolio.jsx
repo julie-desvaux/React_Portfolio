@@ -1,12 +1,12 @@
 import React from "react";
 
-import projects from "../../data";
+import data from "../../data";
 
 const Card = ({ project }) => (
 	<div className="bg-lightBlue max-w-sm rounded overflow-hidden shadow-lg mx-2 md:mx-5 mb-16">
 		<img className="w-full" src={project.img} alt={project.title} />
 		<div className="px-6 py-4">
-			<div className="font-bold text-xl mb-2 text-blue">{project.title}</div>
+			<div className="font-bold text-xl mb-2 text-navyBlue">{project.title}</div>
 			<p
 				className="text-gray-700 text-base text-left"
 				dangerouslySetInnerHTML={{ __html: project.description }}
@@ -34,7 +34,7 @@ function Portfolio() {
 			<h2 className="my-2 uppercase text-gray-200 text-center">Portfolio</h2>
 			<div className="mt-16">
 				<div className="flex flex-col md:flex-row justify-center items-center md:items-start flex-wrap">
-					{projects.map((project) => (
+					{data.projects.map((project) => (
 						<Card project={project} />
 					))}
 				</div>

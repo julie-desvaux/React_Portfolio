@@ -1,5 +1,7 @@
 import React from "react";
 
+import data from "../../data";
+
 const CardXP = ({ xp, index }) => (
 	<li className="text-left">
 		<div className="timeline-badge absolute bg-gray-300 w-12 text-xl text-blue text-center leading-loose rounded-full py-1">
@@ -50,25 +52,12 @@ const CardXP = ({ xp, index }) => (
 );
 
 function Experiences() {
-	const experiences = [
-		{
-			enteprise: "Koya",
-			poste: "Développeuse Web FullStack JS - Stage",
-			date: "octobre 2020 - à ce jour",
-		},
-		{
-			enteprise: "Bien Vivre à Bondy",
-			poste: "Intégration web",
-			date: "novembre 2019 - janvier 2020",
-		},
-	];
-
 	return (
 		<section id="xp" className="pt-16 px-3 text-center">
 			<div className="blue-divider w-24 h-1 bg-blue mx-auto"></div>
 			<h2 className="my-2 uppercase text-blue text-3xl md:text-4xl">Expériences Professionnelles</h2>
 			<ul className="mt-16 py-7 px-2.5 relative timeline">
-				{experiences.map((xp, index) => (
+				{data.experiences.map((xp, index) => (
 					<CardXP xp={xp} index={index} />
 				))}
 				{/* <li>
