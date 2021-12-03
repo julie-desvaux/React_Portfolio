@@ -30,13 +30,15 @@ const Card = ({ project }) => (
 function Portfolio() {
 	return (
 		<section id="portfolio" className="bg-blue pt-16 h-full">
-			<div className="white-divider w-24 h-1 bg-gray-200 mx-auto"></div>
-			<h2 className="my-2 uppercase text-gray-200 text-center">Portfolio</h2>
-			<div className="mt-16">
-				<div className="flex flex-col md:flex-row justify-center items-center md:items-start flex-wrap">
-					{data.projects.map((project) => (
-						<Card project={project} />
-					))}
+			<div className="w-full md:w-9/12 m-auto">
+				<div className="white-divider w-24 h-1 bg-gray-200 mx-auto"></div>
+				<h2 className="my-2 uppercase text-gray-200 text-center">Portfolio</h2>
+				<div className="mt-16">
+					<div className="flex flex-col md:flex-row justify-center items-center md:items-start flex-wrap">
+						{data.projects.map((project) => (
+							<Card project={project} />
+						))}
+					</div>
 				</div>
 			</div>
 		</section>

@@ -97,6 +97,13 @@
 	right: auto;
 }
 
+.educ-card:after {
+	border-left: 14px solid #a5c4d4;
+	border-right: 0 solid #a5c4d4;
+	border-bottom: 14px solid transparent;
+	content: " ";
+}
+
 /* ---------- RESPONSIVE ---------- */
 @media screen and (max-device-width: 1024px) {
 	/* ---------- EXPERIENCES ---------- */
@@ -152,5 +159,9 @@
 		border-right-width: 0;
 		border-left-width: 14px;
 		left: 100%;
+	}
+	.educ-card:after {
+		border-left: 14px solid #a5c4d4;
+		border-right: 0 solid #a5c4d4;
 	}
 }
