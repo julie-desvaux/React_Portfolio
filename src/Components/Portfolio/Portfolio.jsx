@@ -35,8 +35,8 @@ function Portfolio() {
 				<h2 className="my-2 uppercase text-gray-200 text-center">Portfolio</h2>
 				<div className="mt-16">
 					<div className="flex flex-col md:flex-row justify-center items-center md:items-start flex-wrap">
-						{data.projects.map((project) => (
-							<Card project={project} />
+						{data.projects.map((project, index) => (
+							<Card key={index} project={project} />
 						))}
 					</div>
 				</div>

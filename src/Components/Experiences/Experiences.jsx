@@ -41,7 +41,12 @@ const CardXP = ({ xp, index }) => (
 						<li>Sérieux, rigueur</li>
 					</ul>
 					<p>
-						<a className="text-lightBlue hover:text-gray-300" href="http://www.koya-app.fr" target="_blank">
+						<a
+							className="text-lightBlue hover:text-gray-300"
+							href="http://www.koya-app.fr"
+							target="_blank"
+							rel="noreferrer"
+						>
 							Voir le site
 						</a>
 					</p>
@@ -59,7 +64,7 @@ function Experiences() {
 				<h2 className="my-2 uppercase text-blue text-3xl md:text-4xl">Expériences Professionnelles</h2>
 				<ul className="mt-16 py-7 px-2.5 relative timeline">
 					{data.experiences.map((xp, index) => (
-						<CardXP xp={xp} index={index} />
+						<CardXP key={index} xp={xp} index={index} />
 					))}
 					{/* <li>
 					<div className="timeline-badge">
