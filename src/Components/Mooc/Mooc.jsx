@@ -3,14 +3,17 @@ import React from "react";
 import data from "../../data";
 
 const CardMooc = ({ mooc }) => (
-	<div className="bg-blue max-w-sm rounded overflow-hidden shadow-lg mx-2 md:mx-5 mb-16 w-1/3">
+	<div className="bg-blue max-w-sm rounded overflow-hidden shadow-lg mx-2 md:mx-5 mb-16 w-1/2">
 		<div className="px-6 py-4">
 			<div className="mb-5 ">
-				<h3 className="font-bold" dangerouslySetInnerHTML={{ __html: mooc.title }}></h3>
-				<h4 className="mt-1.5">{mooc.organism}</h4>
-				<p className="text-gray-800">
+				<h3 className="font-bold text-white" dangerouslySetInnerHTML={{ __html: mooc.title }}></h3>
+				<h4 className="mt-1.5 text-lightBlue">{mooc.organism}</h4>
+				<p className="text-gray-300">
 					<i className="fas fa-user-graduate"></i> {mooc.date}
 				</p>
+			</div>
+			<div className="mb-5">
+				<p className="text-gray-300" dangerouslySetInnerHTML={{ __html: mooc.description }}></p>
 			</div>
 		</div>
 		<div className="px-6 pt-4 pb-2">

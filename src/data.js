@@ -107,6 +107,8 @@ module.exports = {
 			title: "React",
 			organism: "Dyma",
 			date: "Avril 2021",
+			description:
+				"Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.",
 			technos: [{ techno: "React" }, { techno: "Axios" }],
 			attestation: "",
 		},
@@ -114,6 +116,8 @@ module.exports = {
 			title: "React",
 			organism: "Dyma",
 			date: "Avril 2021",
+			description:
+				"Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.",
 			technos: [{ techno: "React" }, { techno: "Axios" }],
 			attestation: "",
 		},
