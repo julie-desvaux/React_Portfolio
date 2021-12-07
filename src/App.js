@@ -5,6 +5,7 @@ import Skills from "./Components/Skills/Skills";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Experiences from "./Components/Experiences/Experiences";
 import Education from "./Components/Education/Education";
+import Mooc from "./Components/Mooc/Mooc";
 
 // CSS
 import "./App.scss";
@@ -18,6 +19,7 @@ function App() {
 			<Portfolio />
 			<Experiences />
 			<Education />
+			<Mooc />
 		</>
 	);
 }

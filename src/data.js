@@ -102,4 +102,20 @@ module.exports = {
 			attestation: "",
 		},
 	],
+	mooc: [
+		{
+			title: "React",
+			organism: "Dyma",
+			date: "Avril 2021",
+			technos: [{ techno: "React" }, { techno: "Axios" }],
+			attestation: "",
+		},
+		{
+			title: "React",
+			organism: "Dyma",
+			date: "Avril 2021",
+			technos: [{ techno: "React" }, { techno: "Axios" }],
+			attestation: "",
+		},
+	],
 };
