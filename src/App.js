@@ -6,6 +6,7 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import Experiences from "./Components/Experiences/Experiences";
 import Education from "./Components/Education/Education";
 import Mooc from "./Components/Mooc/Mooc";
+import Benevolat from "./Components/Benevolat/Benevolat";
 
 // CSS
 import "./App.scss";
@@ -20,6 +21,7 @@ function App() {
 			<Experiences />
 			<Education />
 			<Mooc />
+			<Benevolat />
 		</>
 	);
 }

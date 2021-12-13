@@ -122,4 +122,37 @@ module.exports = {
 			attestation: "",
 		},
 	],
+	benevolats: [
+		{
+			enteprise: "Croix-Rouge française (AL Bondy-Villemomble)",
+			poste: "Formatrice Prévention et Secours Civique de niveau 1 (PSC1)",
+			date: "avril 2016 - à ce jour",
+			description: [
+				"Accueil d’un public varié (enfants, adultes, diversité culturelles)",
+				"Mise en place d’une formation sur la base d’un programme",
+				"Animation de la formation et évaluation des participants",
+			],
+		},
+		{
+			enteprise: "Croix-Rouge française (AL Bondy-Villemomble)",
+			poste: "Equipière Secouriste (PSE2)",
+			date: "aout 2015 - à ce jour",
+			description: [
+				"Août 2015 : PSE1 (Premiers Secours en Equipe de niveau 1)",
+				"Avril 2018 : PSE2 (Premiers Secours en Equipe de niveau 2)",
+				"Evaluation en équipe de la situation et choix d’un plan d’action d'assistance et de secours",
+				"Mise en oeuvre collectives des actions de secours",
+			],
+		},
+		{
+			enteprise: "Croix-Rouge française (AL Bondy-Villemomble)",
+			poste: "Responsable Locale de la Communication",
+			date: "mars 2015 - à ce jour",
+			description: [
+				"Responsable Local de la Communication et du Développement des Ressources à l'unité locale de Bondy-Villemomble (93)",
+				"Gestion de la page Facebook de Bondy-Villemomble (93)",
+				"Création et Gestion de la page Instagram de Bondy-Villemomble (93)",
+			],
+		},
+	],
 };
