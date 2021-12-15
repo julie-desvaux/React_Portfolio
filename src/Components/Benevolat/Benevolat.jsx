@@ -17,8 +17,10 @@ const CardBenevolat = ({ benevolat, index }) => (
 					</p>
 				</div>
 				<div>
-					{benevolat.description.map((desc) => (
-						<p className="mt-4">{desc}</p>
+					{benevolat.description.map((desc, index) => (
+						<p key={index} className="mt-4">
+							{desc}
+						</p>
 					))}
 				</div>
 			</div>

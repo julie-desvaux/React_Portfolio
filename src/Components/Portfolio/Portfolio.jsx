@@ -13,8 +13,9 @@ const Card = ({ project }) => (
 			></p>
 		</div>
 		<div className="px-6 pt-4 pb-2">
-			{project.technos.map((techno) => (
+			{project.technos.map((techno, index) => (
 				<span
+					key={index}
 					className={`inline-block rounded-full px-3 py-1 text-sm shadow-md font-semibold mr-2 mb-3  text-gray-700 ${
 						techno.class ? techno.class : "bg-gray-200"
 					}`}

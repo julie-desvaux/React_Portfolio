@@ -17,8 +17,9 @@ const CardEducation = ({ education, index }) => (
 					</p>
 				</div>
 				<div className="px-6 pt-4 pb-2">
-					{education.technos.map((techno) => (
+					{education.technos.map((techno, index) => (
 						<span
+							key={index}
 							className={`inline-block rounded-full px-3 py-1 text-sm shadow-md font-semibold mr-2 mb-3  text-gray-700 bg-gray-200`}
 						>
 							#{techno.techno}
