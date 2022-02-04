@@ -63,7 +63,7 @@ const CardEducation = ({ education, index }) => (
 function Education() {
 	return (
 		<section id="education" className="bg-blue pt-16 px-3 text-center pb-6">
-			<div className="w-full md:w-9/12 m-auto">
+			<div className="w-full ml:w-9/12 m-auto">
 				<div className="white-divider w-24 h-1 bg-gray-200 mx-auto"></div>
 				<h2 className="my-2 uppercase text-gray-200 text-center">Education</h2>
 				<ul className="mt-16 py-7 px-2.5 relative timeline">

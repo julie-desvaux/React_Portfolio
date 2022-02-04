@@ -31,7 +31,7 @@ const CardBenevolat = ({ benevolat, index }) => (
 function Benevolat() {
 	return (
 		<section id="benevolat" className="pt-16 px-3 text-center pb-6 bg-blue">
-			<div className="w-full md:w-9/12 m-auto">
+			<div className="w-full ml:w-9/12 m-auto">
 				<div className="white-divider w-24 h-1 bg-white mx-auto"></div>
 				<h2 className="my-2 uppercase text-white text-3xl md:text-4xl">Benevolat</h2>
 				<ul className="mt-16 py-7 px-2.5 relative timeline">
