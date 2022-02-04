@@ -4,6 +4,32 @@ module.exports = {
 			enteprise: "Koya",
 			poste: "Développeuse Web FullStack JS - Stage",
 			date: "octobre 2020 - à ce jour",
+			website: "https://www.koya-app.fr",
+			description: [
+				"Koya est une start-up dédiée à l’accompagnement des particuliers dans leur transition écologique – <a href='https://koya-app.fr' target='_blank'>https://koya-app.fr</a> <br/>\
+				La version beta est sortie le 18/01/2021.",
+				"A terme, Koya permettra à chaque personne d’estimer sa contribution à l’effet de serres via un questionnaire sur ses habitudes de vie. En fonction du score et des thématiques à améliorer (Alimentation, Transport etc…), Koya proposera un programme personnalisé pour diminuer cet impact. Les Koyateurs seront entouré d’une communauté pour les aider à progresser. ",
+			],
+
+			missions: [
+				"Développeuse principale du site et de l’application",
+				"Refonte du site vitrine sous REACT, 98% de performance atteint selon l’outil « Lighthouse » avec 100% pour les bonnes pratiques et 100% de SEO.",
+				"Complétion du questionnaire et implémentation du calcul d’impact sur l’effet de serre",
+				"Création d’un dashboard permettant aux utilisateurs de visualiser et de modifier leur information de profile, leur score et de suivre leur plan d’action personnalisé",
+				"Mise en place du panier (actuellement gratuit) et sécurisation du contenu visible suivant les achats effectués.",
+				"Mise en place d’un Back-office (en cours)",
+				"Refonte de la base de données (en cours)",
+				"Déploiement via Docker",
+			],
+			technos: [
+				"Méthodologie : Agile, UX, Télétravail à temps complet",
+				"Front-end : React, Sass",
+				"Back-end : Node.js, Express.js",
+				"Base de données : MongoDB",
+				"Déploiement : Docker",
+				"Outils de travail collaboratif : Notion, Slack, suite Google",
+				"Outils d’UI/UX design (initiation) : Figma, Adobe XD",
+			],
 		},
 		{
 			enteprise: "Bien Vivre à Bondy",
