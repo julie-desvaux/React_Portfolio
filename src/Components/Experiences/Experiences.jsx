@@ -17,39 +17,51 @@ const CardXP = ({ xp, index }) => (
 					</p>
 				</div>
 				<div>
-					<p>
-						Développement de l'application web de Koya : participation à la conception, test et maintien des
-						nouvelles features du site (gamification, aspect communautaire, etc.){" "}
-					</p>
-					<p>Projet en méthode Agile</p>
-					<h5>Compétences</h5>
-					<ul>
-						<li className="relative mb-4">
-							Environnement technologique :
+					{xp.description && (
+						<>
+							<h5>Description :</h5>
+							{xp.description.map((desc, index) => (
+								<p key={index} dangerouslySetInnerHTML={{ __html: desc }}></p>
+							))}
+						</>
+					)}
+				</div>
+				<div>
+					{xp.missions && (
+						<>
+							<h5>Missions</h5>
 							<ul>
-								<li>Back : Node.js</li>
-								<li>Front : React.js, Javascript, CSS (SASS), Webpack</li>
-								<li>BDD : MongoDB</li>
-								<li>Infra : Docker, CI avec Git, GitLab</li>
+								{xp.missions.map((mission, index) => (
+									<li key={index}>{mission}</li>
+								))}
 							</ul>
-						</li>
-						<li>Autonomie et sens du travail en équipe</li>
-						<li>Polyvalence, organisation, capacité d’adaptation</li>
-						<li>Gestion des priorités et des délais</li>
-						<li>Force de proposition, créativité</li>
-						<li>Passion, curiosité</li>
-						<li>Sérieux, rigueur</li>
-					</ul>
-					<p>
-						<a
-							className="text-lightBlue hover:text-gray-300"
-							href="http://www.koya-app.fr"
-							target="_blank"
-							rel="noreferrer"
-						>
-							Voir le site
-						</a>
-					</p>
+						</>
+					)}
+				</div>
+				<div>
+					{xp.technos && (
+						<>
+							<h5>Environnement technologique :</h5>
+							<ul>
+								{xp.technos.map((techno, index) => (
+									<li key={index}>{techno}</li>
+								))}
+							</ul>
+						</>
+					)}
+
+					{xp.website && (
+						<p>
+							<a
+								className="text-lightBlue hover:text-gray-300"
+								href={xp.website}
+								target="_blank"
+								rel="noreferrer"
+							>
+								Voir le site
+							</a>
+						</p>
+					)}
 				</div>
 			</div>
 		</div>
@@ -59,7 +71,7 @@ const CardXP = ({ xp, index }) => (
 function Experiences() {
 	return (
 		<section id="xp" className="pt-16 px-3 text-center mb-4">
-			<div className="w-full md:w-9/12 m-auto">
+			<div className="w-full ml:w-9/12 m-auto">
 				<div className="blue-divider w-24 h-1 bg-blue mx-auto"></div>
 				<h2 className="my-2 uppercase text-blue text-3xl md:text-4xl">Expériences Professionnelles</h2>
 				<ul className="mt-16 py-7 px-2.5 relative timeline">
