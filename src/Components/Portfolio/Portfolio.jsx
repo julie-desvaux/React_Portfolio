@@ -41,6 +41,7 @@ const Card = ({ project }) => {
 						className="bg-navyBlue hover:bg-gray-300 text-gray-200 hover:text-navyBlue font-semibold py-2 px-4 border border-gray-400 rounded shadow"
 						href={project.link}
 						target="_blank"
+						rel="noreferrer"
 					>
 						Voir le site
 					</a>
@@ -50,11 +51,17 @@ const Card = ({ project }) => {
 						className=" flex justify-center items-center bg-navyBlue hover:bg-gray-300 text-gray-200 hover:text-navyBlue font-semibold py-2 px-4 border border-gray-400 rounded shadow"
 						href={project.repo}
 						target="_blank"
+						rel="noreferrer"
 						onMouseEnter={changeBg}
 						onMouseLeave={changeBg}
 					>
 						Voir le code
-						<img ref={imgGitHub} className="pl-2" src="/images/github_white.png" />
+						<img
+							ref={imgGitHub}
+							className="pl-2"
+							src="/images/github_white.png"
+							alt="lien repository github"
+						/>
 					</a>
 				)}
 			</div>

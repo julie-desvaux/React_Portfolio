@@ -10,6 +10,7 @@ const navigation = [
 	{ name: "Education", href: "#education", current: false },
 	{ name: "Mooc", href: "#mooc", current: false },
 	{ name: "Bénévolat", href: "#benevolat", current: false },
+	{ name: "Contact", href: "#contact", current: false },
 ];
 
 function classNames(...classes) {
@@ -57,7 +58,7 @@ export default function Navbar() {
 													item.current
 														? "bg-gray-200 text-blue font-bold"
 														: "text-gray-200 hover:bg-navyBlue hover:text-white font-medium",
-													"px-3 py-2 rounded-md text-sm font-medium uppercase tracking-wide"
+													"px-2 py-2 rounded-md text-sm font-medium uppercase tracking-wide"
 												)}
 												aria-current={item.current ? "page" : undefined}
 											>

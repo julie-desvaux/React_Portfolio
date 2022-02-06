@@ -19,18 +19,18 @@ const CardXP = ({ xp, index }) => (
 				<div>
 					{xp.description && (
 						<>
-							<h5>Description :</h5>
+							<h5 className="underline mb-2">Description :</h5>
 							{xp.description.map((desc, index) => (
 								<p key={index} dangerouslySetInnerHTML={{ __html: desc }}></p>
 							))}
 						</>
 					)}
 				</div>
-				<div>
+				<div className="mt-5">
 					{xp.missions && (
 						<>
-							<h5>Missions</h5>
-							<ul>
+							<h5 className="underline mb-2">Missions :</h5>
+							<ul className="list-disc pl-3.5">
 								{xp.missions.map((mission, index) => (
 									<li key={index}>{mission}</li>
 								))}
@@ -41,8 +41,8 @@ const CardXP = ({ xp, index }) => (
 				<div>
 					{xp.technos && (
 						<>
-							<h5>Environnement technologique :</h5>
-							<ul>
+							<h5 className="underline mb-2">Environnement technologique :</h5>
+							<ul className="list-disc pl-3.5">
 								{xp.technos.map((techno, index) => (
 									<li key={index}>{techno}</li>
 								))}
@@ -50,18 +50,38 @@ const CardXP = ({ xp, index }) => (
 						</>
 					)}
 
-					{xp.website && (
-						<p>
+					<div className="px-6 pt-4 pb-2">
+						{xp.website && (
 							<a
-								className="text-lightBlue hover:text-gray-300"
+								className="
+									text-lightBlue
+									bg-transparent
+									border border-solid border-lightBlue
+									hover:bg-lightBlue hover:text-navyBlue
+									active:bg-lightBlue
+									font-bold
+									uppercase
+									text-sm
+									px-6
+									py-3
+									rounded
+									outline-none
+									focus:outline-none
+									mr-1
+									mb-1
+									ease-linear
+									transition-all
+									duration-150
+								"
 								href={xp.website}
 								target="_blank"
 								rel="noreferrer"
+								type="button"
 							>
 								Voir le site
 							</a>
-						</p>
-					)}
+						)}
+					</div>
 				</div>
 			</div>
 		</div>

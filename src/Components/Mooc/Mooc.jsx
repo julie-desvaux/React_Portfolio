@@ -3,7 +3,7 @@ import React from "react";
 import data from "../../data";
 
 const CardMooc = ({ mooc }) => (
-	<div className="bg-blue max-w-sm rounded overflow-hidden shadow-lg mx-2 md:mx-5 mb-16 w-1/2">
+	<div className="bg-blue max-w-sm rounded overflow-hidden shadow-lg mx-2 md:mx-5 mb-16 md:w-1/2">
 		<div className="px-6 py-4">
 			<div className="mb-5 ">
 				<h3 className="font-bold text-white" dangerouslySetInnerHTML={{ __html: mooc.title }}></h3>
@@ -13,6 +13,13 @@ const CardMooc = ({ mooc }) => (
 				</p>
 			</div>
 			<div className="mb-5">
+				<ul className="text-white text-left list-disc pl-3.5">
+					{mooc.learnings.map((learning, index) => (
+						<li key={index} className="pt-2">
+							{learning}
+						</li>
+					))}
+				</ul>
 				<p className="text-gray-300" dangerouslySetInnerHTML={{ __html: mooc.description }}></p>
 			</div>
 		</div>
@@ -20,15 +27,44 @@ const CardMooc = ({ mooc }) => (
 			{mooc.technos.map((techno, index) => (
 				<span
 					key={index}
-					className={`inline-block rounded-full px-3 py-1 text-sm shadow-md font-semibold mr-2 mb-3  text-gray-700 ${
-						techno.class ? techno.class : "bg-gray-200"
-					}`}
+					className={`inline-block rounded-full px-3 py-1 text-sm shadow-md font-semibold mr-2 mb-3  text-gray-700 bg-gray-200`}
 				>
-					#{techno.techno}
+					#{techno}
 				</span>
 			))}
 		</div>
-		<div className="px-6 pt-4 pb-2"></div>
+		<div className="px-6 pt-4 pb-2">
+			{mooc.attestation && (
+				<a
+					className="
+						text-lightBlue
+						bg-transparent
+						border border-solid border-lightBlue
+						hover:bg-lightBlue hover:text-navyBlue
+						active:bg-lightBlue
+						font-bold
+						uppercase
+						text-sm
+						px-6
+						py-3
+						rounded
+						outline-none
+						focus:outline-none
+						mr-1
+						mb-1
+						ease-linear
+						transition-all
+						duration-150
+					"
+					href={mooc.attestation}
+					target="_blank"
+					rel="noreferrer"
+					type="button"
+				>
+					Voir l'attestation
+				</a>
+			)}
+		</div>
 	</div>
 );
 
@@ -40,7 +76,7 @@ function Mooc() {
 				<h2 className="my-2 uppercase text-blue text-3xl md:text-4xl">Mooc</h2>
 				<div className="mt-16">
 					<div className="flex flex-col md:flex-row justify-center items-center md:items-start flex-wrap">
-						{data.mooc.map((mooc, index) => (
+						{data.moocs.map((mooc, index) => (
 							<CardMooc key={index} mooc={mooc} index={index} />
 						))}
 					</div>

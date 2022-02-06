@@ -1,6 +1,54 @@
 module.exports = {
 	experiences: [
 		{
+			enteprise: "Konexio",
+			poste: "Assistante de formation 'Développement Web & Web Mobile' - Freelance",
+			date: "mai 2021 - à ce jour",
+			website: "https://www.konexio.eu",
+			description: [
+				"Konexio est une association qui lutte contre l'illectronisme en dispensant des formations qui vont des bases : apprendre à utiliser un ordinateur pour faire ses démarches en ligne, faire un cv, ... Jusqu'à apprendre le développement web. <br/>\
+				Je suis actuellement assistante de formation sur un formation certifiante (titre RNCP) de Développeur Web et Web Mobile",
+			],
+
+			missions: [
+				"Reformulation de cours",
+				"Aide lors des exercices",
+				"Participation aux réunions d'évaluation des apprenants",
+			],
+			technos: [
+				"Front-end : HTML, CSS, Bootstrap, React",
+				"Back-end : Node.js, Express.js",
+				"Base de données : MongoDB, PostgreSQL",
+				"Déploiement : Github Pages, Heroku",
+				"Outils de travail collaboratif : Notion, Slack, suite Google",
+			],
+		},
+		{
+			enteprise: "Koya",
+			poste: "Développeuse Web FullStack JS - Freelance",
+			date: "mai 2021 - à ce jour",
+			website: "https://www.koya-app.fr",
+			description: [
+				"Après avoir effectué mon stage de fin d'étude chez Koya (voir description du poste suivant), j'ai eu la chance de pouvoir continuer à mi-temps en freelance.",
+			],
+
+			missions: [
+				"Développeuse principale du site et de l’application",
+				"Encadrement d'un stagiaire.",
+				"Développement de l'application et de la communauté de Koya (React, Sass, Node, Express, MongoDB) ",
+				"Déploiement via Docker",
+			],
+			technos: [
+				"Méthodologie : Agile, UX, Télétravail à temps complet",
+				"Front-end : React, Sass",
+				"Back-end : Node.js, Express.js",
+				"Base de données : MongoDB",
+				"Déploiement : Docker",
+				"Outils de travail collaboratif : Notion, Slack, suite Google",
+				"Outils d’UI/UX design (initiation) : Figma, Adobe XD",
+			],
+		},
+		{
 			enteprise: "Koya",
 			poste: "Développeuse Web FullStack JS - Stage",
 			date: "octobre 2020 - à ce jour",
@@ -31,11 +79,6 @@ module.exports = {
 				"Outils d’UI/UX design (initiation) : Figma, Adobe XD",
 			],
 		},
-		{
-			enteprise: "Bien Vivre à Bondy",
-			poste: "Intégration web",
-			date: "novembre 2019 - janvier 2020",
-		},
 	],
 	projects: [
 		{
@@ -64,6 +107,7 @@ module.exports = {
 				Searchbar pour rechercher un streamer <br/>\
 				Possibilité de regarder un streamer, de chatter via React Twitch Embed Video",
 			technos: [{ techno: "React", class: "react" }, { techno: "CSS3", class: "css" }, { techno: "Api Twitch" }],
+			repo: "https://github.com/julie-desvaux/react_clone_twitch",
 		},
 		{
 			title: "Tchat",
@@ -85,6 +129,8 @@ module.exports = {
 				{ techno: "CSS3", class: "css" },
 				{ techno: "JS", class: "js" },
 			],
+
+			link: "https://jeux.julie-desvaux.com/",
 		},
 	],
 	educations: [
@@ -128,24 +174,54 @@ module.exports = {
 			attestation: "",
 		},
 	],
-	mooc: [
+	moocs: [
 		{
-			title: "React",
+			title: "Node.js",
 			organism: "Dyma",
-			date: "Avril 2021",
-			description:
-				"Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.",
-			technos: [{ techno: "React" }, { techno: "Axios" }],
-			attestation: "",
+			date: "Septembre 2021",
+			learnings: [
+				"Maitrisez une base de données NoSQL avec MongoDB et l'ORM Mongoose.",
+				"Apprenez à créer votre serveur HTTS en obtenant et en gérant un certificat TLS.",
+				"Apprenez comment accèder au système de fichiers",
+				"Gérer le téléchargements de fichiers avec Multer",
+				"Apprenez à gérer l'authentification JWT et avec des sessions en utilisant des cookies",
+			],
+			time: "28h de contenus",
+			technos: ["Node", "Express", "Multer", "JWT", "Socket.io"],
+			attestation: "/docs/mooc/dyma/certification_node.pdf",
 		},
 		{
 			title: "React",
 			organism: "Dyma",
-			date: "Avril 2021",
-			description:
-				"Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.",
-			technos: [{ techno: "React" }, { techno: "Axios" }],
-			attestation: "",
+			date: "Juillet 2021",
+			learnings: [
+				"Création et la validation de formulaires avec Formik et Yup !",
+				"React-Router",
+				"Hooks",
+				"Redux",
+				"Déploiement",
+				"Les tests avec Jest, React-testing-library, Cypress",
+				"Utiliser TypeScript avec React",
+			],
+			time: "25h de contenus",
+			technos: ["React", "Axios", "Redux"],
+			attestation: "/docs/mooc/dyma/certification_react.pdf",
+		},
+		{
+			title: "Git",
+			organism: "Dyma",
+			date: "Août 2021",
+			learnings: [
+				"Maitriser toutes les commandes que vous utiliserez quotidiennement, add, commit, push, fetch, pull, rebase, reset, checkout et bien d'autres",
+				"Maitriser les branches Git",
+				"Apprenez les Git hooks et apprenez à configurer Husky.",
+				"Devenez expert en connaissant toutes les meilleures pratiques avec l'utilisation de Git flow",
+				"Comprenez la différence et les cas d'utilisations entre git merge et git rebase.",
+				"Progressez avec des exemples concrets sur chaque situation",
+			],
+			time: "7h de contenus",
+			technos: ["Git", "GitLab", "Husky", "Gitflow"],
+			attestation: "/docs/mooc/dyma/certification_git.pdf",
 		},
 	],
 	benevolats: [
