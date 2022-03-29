@@ -2,7 +2,7 @@ module.exports = {
 	experiences: [
 		{
 			enteprise: "Konexio",
-			poste: "Assistante de formation 'Développement Web & Web Mobile' - Freelance",
+			poste: "Formatrice assistante 'Développement Web & Web Mobile' - Freelance",
 			date: "mai 2021 - à ce jour",
 			website: "https://www.konexio.eu",
 			description: [
@@ -13,7 +13,9 @@ module.exports = {
 			missions: [
 				"Reformulation de cours",
 				"Aide lors des exercices",
+				"Correction des exercices",
 				"Participation aux réunions d'évaluation des apprenants",
+				"Cours de rattrapage pour les apprenants en difficulté",
 			],
 			technos: [
 				"Front-end : HTML, CSS, Bootstrap, React",
@@ -175,6 +177,21 @@ module.exports = {
 		},
 	],
 	moocs: [
+		{
+			title: "Développeur Responsable",
+			organism: "The Green Compagnon",
+			date: "Mars 2021",
+			learnings: [
+				"Comprendre les enjeux du Numérique Responsable",
+				"Comprendre l’impact environnemental des décisions de développement",
+				"Apprendre les bonnes pratiques éco-responsables à mettre en oeuvre dans votre quotidien",
+				"Mesurer l’empreinte environnementale de votre application",
+				"Réduire l’impact environnemental de votre code",
+			],
+			time: "",
+			technos: ["front", "back"],
+			attestation: "/docs/mooc/developpeur-responsable-the-green-compagnon.pdf",
+		},
 		{
 			title: "Node.js",
 			organism: "Dyma",
