@@ -3,8 +3,8 @@ import React from "react";
 import data from "../../data";
 
 const CardMooc = ({ mooc }) => (
-	<div className="bg-blue max-w-sm rounded overflow-hidden shadow-lg mx-2 md:mx-5 mb-16 md:w-1/2">
-		<div className="px-6 py-4">
+	<div className="bg-blue max-w-lg rounded overflow-hidden shadow-lg mx-2 md:mx-5 mb-16 md:w-2/3">
+		<div className="px-10 py-5">
 			<div className="mb-5 ">
 				<h3 className="font-bold text-white" dangerouslySetInnerHTML={{ __html: mooc.title }}></h3>
 				<h4 className="mt-1.5 text-lightBlue">{mooc.organism}</h4>
@@ -33,7 +33,7 @@ const CardMooc = ({ mooc }) => (
 				</span>
 			))}
 		</div>
-		<div className="px-6 pt-4 pb-2">
+		<div className="px-6 p-4">
 			{mooc.attestation && (
 				<a
 					className="

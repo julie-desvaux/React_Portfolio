@@ -1,6 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const navigation = [
 	{ name: "A propos", href: "#about", current: true },
@@ -18,6 +18,8 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+	const location = useLocation();
+	console.log(location);
 	return (
 		<Disclosure as="nav" className="w-full bg-blue border-b-2 border-gray-200 fixed z-50">
 			{({ open }) => (
@@ -51,19 +53,19 @@ export default function Navbar() {
 								<div className="hidden sm:block sm:ml-6">
 									<div className="flex space-x-4">
 										{navigation.map((item) => (
-											<Link
+											<a
 												key={item.name}
-												to={item.href}
+												href={item.href}
 												className={classNames(
-													item.current
+													item.href === location.hash
 														? "bg-gray-200 text-blue font-bold"
 														: "text-gray-200 hover:bg-navyBlue hover:text-white font-medium",
 													"px-2 py-2 rounded-md text-sm font-medium uppercase tracking-wide"
 												)}
-												aria-current={item.current ? "page" : undefined}
+												aria-current={item.href === location.hash ? "page" : undefined}
 											>
 												{item.name}
-											</Link>
+											</a>
 										))}
 									</div>
 								</div>
