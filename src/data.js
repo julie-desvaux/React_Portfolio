@@ -151,7 +151,7 @@ module.exports = {
 				{ techno: "Node", class: "node" },
 				{ techno: "MongoDB" },
 			],
-			attestation: "rncp.pdf",
+			attestation: "/docs/rncp.pdf",
 		},
 		{
 			title: 'Formation  </br>\
@@ -166,7 +166,7 @@ module.exports = {
 				{ techno: "Hibernate" },
 				{ techno: "JSTL" },
 			],
-			attestation: "AttestionFinFormationJava.pdf",
+			attestation: "/docs/AttestionFinFormationJava.pdf",
 		},
 		{
 			title: "Niveau BTS Négociation et Relation Clients en alternance",
