@@ -28,7 +28,7 @@ const CardEducation = ({ education, index }) => (
 				</div>
 				<div className="px-6 pt-4 pb-2">
 					{education.attestation && (
-						<button
+						<a
 							className="
 					  text-navyBlue
 					  bg-transparent
@@ -50,9 +50,12 @@ const CardEducation = ({ education, index }) => (
 					  duration-150
 					"
 							type="button"
+							href={education.attestation}
+							target="_blank"
+							rel="noreferrer"
 						>
 							Voir l'attestation
-						</button>
+						</a>
 					)}
 				</div>
 			</div>
