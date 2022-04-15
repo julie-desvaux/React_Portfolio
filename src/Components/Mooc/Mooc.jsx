@@ -37,7 +37,7 @@ const CardMooc = ({ mooc }) => (
 			{mooc.attestation && (
 				<a
 					className="
-						text-lightBlue
+						text-white
 						bg-transparent
 						border border-solid border-lightBlue
 						hover:bg-lightBlue hover:text-navyBlue

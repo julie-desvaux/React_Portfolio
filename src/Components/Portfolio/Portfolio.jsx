@@ -61,6 +61,7 @@ const Card = ({ project }) => {
 							className="pl-2 w-7 h-5"
 							src="/images/github_white.png"
 							alt="lien repository github"
+							loading="lazy"
 						/>
 					</a>
 				)}
