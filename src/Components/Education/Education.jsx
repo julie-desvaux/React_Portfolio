@@ -1,11 +1,13 @@
 import React from "react";
 
+import FaBriefcase from "../../Assets/Fontawesome/briefcase.svg";
+
 import data from "../../data";
 
 const CardEducation = ({ education, index }) => (
 	<li className="text-left">
 		<div className="timeline-badge absolute bg-gray-300 w-12 text-xl text-blue text-center leading-loose rounded-full py-1">
-			<span className="fas fa-briefcase"></span>
+			<img src={FaBriefcase} alt="malette" className="w-1/2 mx-auto text-blue my-2" />
 		</div>
 		<div className={index % 2 === 0 ? "timeline-panel-container" : "timeline-panel-container-inverted"}>
 			<div className="timeline-panel text-center relative p-5 border border-gray-300 rounded-md shadow-xl bg-lightBlue text-blue educ-card">
@@ -65,7 +67,7 @@ const CardEducation = ({ education, index }) => (
 
 function Education() {
 	return (
-		<section id="education" className="bg-blue pt-16 px-3 text-center pb-6">
+		<section id="education" className="bg-blue pt-16 px-3 text-center pb-6 section-to-print">
 			<div className="w-full ml:w-9/12 m-auto">
 				<div className="white-divider w-24 h-1 bg-gray-200 mx-auto"></div>
 				<h2 className="my-2 uppercase text-gray-200 text-center">Education</h2>

@@ -70,7 +70,7 @@ const CardMooc = ({ mooc }) => (
 
 function Mooc() {
 	return (
-		<section id="mooc" className="pt-16 px-3 text-center mb-4">
+		<section id="mooc" className="pt-16 px-3 text-center mb-4 section-to-print">
 			<div className="w-full md:w-9/12 m-auto">
 				<div className="blue-divider w-24 h-1 bg-blue mx-auto"></div>
 				<h2 className="my-2 uppercase text-blue text-3xl md:text-4xl">Mooc</h2>
