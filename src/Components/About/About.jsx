@@ -12,7 +12,7 @@ function About() {
 			<div className="w-full md:w-9/12 m-auto">
 				<div className="h-screen pt-8 flex justify-center items-center flex-col">
 					<div className="w-3/4 md:w-1/4 mx-auto py-4">
-						<img src="/me.png" alt="Julie Desvaux" className="rounded-full mx-auto" />
+						<img src="/images/me.webp" alt="Julie Desvaux" className="rounded-full mx-auto w-full h-full" />
 					</div>
 					<h1 className="uppercase mt-2 md:mt-5 tracking-wide">Julie Desvaux</h1>
 					<h2 className="uppercase mb-5">

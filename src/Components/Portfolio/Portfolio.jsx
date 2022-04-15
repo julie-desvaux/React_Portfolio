@@ -58,7 +58,7 @@ const Card = ({ project }) => {
 						Voir le code
 						<img
 							ref={imgGitHub}
-							className="pl-2"
+							className="pl-2 w-7 h-5"
 							src="/images/github_white.png"
 							alt="lien repository github"
 						/>

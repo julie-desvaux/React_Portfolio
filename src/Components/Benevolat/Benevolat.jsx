@@ -7,7 +7,7 @@ import data from "../../data";
 const CardBenevolat = ({ benevolat, index }) => (
 	<li className="text-left">
 		<div className="timeline-badge absolute bg-gray-300 w-12 text-xl text-blue text-center leading-loose rounded-full py-1">
-			<img src={FaBriefcase} alt="malette" className="w-1/2 mx-auto text-blue my-2" />
+			<img src={FaBriefcase} alt="malette" className="w-1/2 h-full mx-auto text-blue my-2" />
 		</div>
 		<div className={index % 2 === 0 ? "timeline-panel-container" : "timeline-panel-container-inverted"}>
 			<div className="timeline-panel relative p-5 border border-gray-300 rounded-md shadow-xl bg-lightBlue text-blue educ-card">
