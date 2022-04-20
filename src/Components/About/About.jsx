@@ -12,7 +12,7 @@ function About() {
 			<div className="w-full md:w-9/12 m-auto">
 				<div className="h-screen pt-8 flex justify-center items-center flex-col">
 					<div className="w-3/4 md:w-1/4 mx-auto py-4">
-						<img src="/me.jpg" alt="Julie Desvaux" className="rounded-full mx-auto" />
+						<img src="/images/me.webp" alt="Julie Desvaux" className="rounded-full mx-auto w-full h-full" />
 					</div>
 					<h1 className="uppercase mt-2 md:mt-5 tracking-wide">Julie Desvaux</h1>
 					<h2 className="uppercase mb-5">
@@ -20,22 +20,22 @@ function About() {
 							onInit={(typewriter) => {
 								typewriter
 									.changeDelay(20)
-									.typeString("<span>Dev Full-Stack MERN</span>")
+									.typeString('<span class="mern">Dev Full-Stack MERN</span>')
 									.pause(1500)
 									.deleteChars(19)
-									.typeString('<span style="color: #EFD81D;"> Javascript !</span>')
+									.typeString('<span class="js"> Javascript !</span>')
 									.pause(1000)
 									.deleteChars(12)
-									.typeString('<span style="color: #48CEF7;">React !</span>')
+									.typeString('<span class="react">React !</span>')
 									.pause(1000)
 									.deleteChars(7)
-									.typeString('<span style="color: #8BBF3D;"> Node !</span>')
+									.typeString('<span class="node"> Node !</span>')
 									.pause(1000)
 									.deleteChars(6)
-									.typeString('<span style="color: #3D9537;"> MongoDB !</span>')
+									.typeString('<span class="mongo"> MongoDB !</span>')
 									.pause(1000)
 									.deleteChars(10)
-									.typeString('<span style="color: #EFD81D;"> Dev Web Full-Stack MERN</span>')
+									.typeString('<span class="mern"> Dev Web Full-Stack MERN</span>')
 									.start();
 							}}
 						/>
@@ -54,7 +54,7 @@ function About() {
 						<span>Télécharger CV</span>
 					</button>
 				</div>
-				<div className="py-6 md:py-8 px-2 md:px-16 text-left">
+				<div className="py-6 md:py-8 px-2 md:px-16 text-left section-to-print">
 					<p className="pb-4">
 						A la recherche de nouvelles opportunités pour avril 2022 je porte un intérêt particulier aux
 						projets ayant un impact social et/ou environnemental positif.

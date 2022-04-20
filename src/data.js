@@ -84,6 +84,24 @@ module.exports = {
 	],
 	projects: [
 		{
+			title: "Koya",
+			img: "/projects/koya.png",
+			description:
+				"Koya est une start-up dédiée à l’accompagnement des particuliers dans leur transition écologique <br/>\
+				• Refonte du site vitrine sous REACT, 98% de performance atteint selon l’outil « Lighthouse » avec 100% pour les bonnes pratiques et 100% de SEO.<br/>\
+				• Complétion du questionnaire et implémentation du calcul d’impact sur l’effet de serre<br/>\
+				• Création d’un dashboard permettant aux utilisateurs de visualiser et de modifier leur information de profile, leur score et de suivre leur plan d’action personnalisé<br/>\
+				• Mise en place du panier (actuellement gratuit) et sécurisation du contenu visible suivant les achats effectués.<br/>\
+				• Mise en place d’un Back-office (en cours)<br/>\
+				• Refonte de la base de données (en cours)<br/>\
+				• Déploiement via Docker",
+			technos: [
+				{ techno: "React", class: "react" },
+				{ techno: "Sass", class: "sass" },
+			],
+			link: "https://koya-app.fr/",
+		},
+		{
 			title: "Moovice",
 			img: "/projects/moovice.gif",
 			description:

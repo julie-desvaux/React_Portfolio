@@ -1,34 +1,19 @@
-.css {
-	background-color: #214ce5;
-	color: #a5c4d4 !important;
-}
-
-.html {
-	background-color: #e54c21;
-}
-
 .js {
-	background-color: #fcdc00;
-}
-
-.node {
-	background-color: #43853d;
-	color: #a5c4d4 !important;
+	color: #efd81d;
 }
 
 .react {
-	background-color: #61dafb;
+	color: #48cef7;
 }
-
-.redux {
-	background-color: #764abc;
-	color: #a5c4d4 !important;
+.node {
+	color: #8bbf3d;
 }
-
-.sass {
-	background-color: #cf649a;
+.mongo {
+	color: #3d9537;
 }
-
+.mern {
+	color: #efd81d;
+}
 /* ---------- EXPERIENCES ---------- */
 
 #experiences .text-muted {
@@ -102,6 +87,114 @@
 	border-right: 0 solid #a5c4d4;
 	border-bottom: 14px solid transparent;
 	content: " ";
+}
+
+.bg-html5 {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -10px -10px;
+}
+
+.bg-css {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -110px -10px;
+}
+
+.bg-js {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -210px -10px;
+}
+
+.bg-bootstrap {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -310px -10px;
+}
+
+.bg-tailwind {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -410px -10px;
+}
+
+.bg-sass {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -510px -10px;
+}
+
+.bg-react {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -610px -10px;
+}
+
+.bg-redux {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -710px -10px;
+}
+
+.bg-next {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -810px -10px;
+}
+
+.bg-node {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -910px -10px;
+}
+
+.bg-express {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -1010px -10px;
+}
+
+.bg-java {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -1110px -10px;
+}
+
+.bg-mongo {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -1210px -10px;
+}
+
+.bg-postgresql {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -1310px -10px;
+}
+
+.bg-my_sql {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -1410px -10px;
+}
+
+.bg-git {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -1510px -10px;
+}
+
+.bg-github {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -1610px -10px;
+}
+
+.bg-gitlab {
+	width: 80px;
+	height: 104px;
+	background: url("./Assets/css_sprites.png") -1710px -10px;
 }
 
 /* ---------- RESPONSIVE ---------- */

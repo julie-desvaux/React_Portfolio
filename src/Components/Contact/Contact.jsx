@@ -136,7 +136,7 @@ function Contact() {
 								type="submit"
 								onClick={(e) => submit(e)}
 							>
-								Send
+								Envoyer
 							</button>
 						</div>
 					</form>

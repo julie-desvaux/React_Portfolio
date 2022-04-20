@@ -16,8 +16,8 @@ const Card = ({ project }) => {
 	};
 
 	return (
-		<div className="bg-lightBlue max-w-sm rounded overflow-hidden shadow-lg mx-2 md:mx-5 mb-16">
-			<img className="w-full" src={project.img} alt={project.title} />
+		<div className="bg-lightBlue max-w-sm rounded overflow-hidden shadow-lg mx-2 md:mx-5 mb-16 section-to-print">
+			<img className="w-full" src={project.img} alt={project.title} loading="lazy" />
 			<div className="px-6 py-4">
 				<div className="font-bold text-xl mb-2 text-navyBlue">{project.title}</div>
 				<p
@@ -58,9 +58,10 @@ const Card = ({ project }) => {
 						Voir le code
 						<img
 							ref={imgGitHub}
-							className="pl-2"
+							className="pl-2 w-7 h-5"
 							src="/images/github_white.png"
 							alt="lien repository github"
+							loading="lazy"
 						/>
 					</a>
 				)}

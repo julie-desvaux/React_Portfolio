@@ -19,7 +19,6 @@ function classNames(...classes) {
 
 export default function Navbar() {
 	const location = useLocation();
-	console.log(location);
 	return (
 		<Disclosure as="nav" className="w-full bg-blue border-b-2 border-gray-200 fixed z-50">
 			{({ open }) => (
