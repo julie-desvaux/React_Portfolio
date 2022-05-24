@@ -132,7 +132,7 @@ function Contact() {
 
 						<div>
 							<button
-								className="w-full shadow bg-lightBlue hover:bg-lightBlue focus:shadow-outline focus:outline-none text-blue font-bold py-2 px-4 rounded"
+								className="w-full shadow bg-lightBlue hover:bg-lightBlue focus:shadow-outline focus:outline-none text-gray-700 font-bold py-2 px-4 rounded"
 								type="submit"
 								onClick={(e) => submit(e)}
 							>
