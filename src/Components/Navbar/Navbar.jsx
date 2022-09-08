@@ -57,8 +57,8 @@ export default function Navbar() {
 												href={item.href}
 												className={classNames(
 													item.href === location.hash
-														? "bg-gray-200 text-blue font-bold"
-														: "text-gray-200 hover:bg-navyBlue hover:text-white font-medium",
+														? "bg-white text-blue font-bold"
+														: "text-white hover:bg-navyBlue hover:text-white font-medium",
 													"px-2 py-2 rounded-md text-sm font-medium uppercase tracking-wide"
 												)}
 												aria-current={item.href === location.hash ? "page" : undefined}
