@@ -1,13 +1,51 @@
 module.exports = {
 	experiences: [
 		{
+			enteprise: "Fairness",
+			poste: "Développeuse Web ",
+			date: "septembre 2022 - à ce jour",
+			website: "https://fairness.coop/",
+			description: [
+				"Fairness est une coopérative qui vous accompagne dans la conception responsable de vos projets Web et mobiles.",
+			],
+
+			missions: ["Développement de sites web éco-conçus"],
+			technos: [
+				"Front-end : HTML, CSS, Svelte",
+				"Back-end : Node.js, Express.js",
+				"Base de données : MongoDB, PostgreSQL",
+				"Outils de travail collaboratif : Github, Mattermost",
+			],
+		},
+		{
+			enteprise: "Superprof",
+			poste: "Formatrice HTML / CSS / Javascript (React, Node) / MongoDB - Freelance",
+			date: "avril 2022 - à ce jour",
+			website:
+				"https://www.superprof.fr/javascript-developpeuse-formatrice-assistante-bootcamp-donne-cours-html-css-javascript-react-node.html",
+			description: ["Cours particulier de JavaScript (React, Node) sur la plateforme SuperProf"],
+
+			missions: [
+				"Création de cours pour les apprenants",
+				"Création d'exercices pour les apprenants",
+				"Correction des exercices",
+			],
+			technos: [
+				"Front-end : HTML, CSS, Bootstrap, React",
+				"Back-end : Node.js, Express.js",
+				"Base de données : MongoDB, PostgreSQL",
+				"Déploiement : Github Pages, Heroku",
+				"Outils de travail collaboratif : Notion, Discord, Google Meet",
+			],
+		},
+		{
 			enteprise: "Konexio",
 			poste: "Formatrice assistante 'Développement Web & Web Mobile' - Freelance",
 			date: "mai 2021 - à ce jour",
 			website: "https://www.konexio.eu",
 			description: [
 				"Konexio est une association qui lutte contre l'illectronisme en dispensant des formations qui vont des bases : apprendre à utiliser un ordinateur pour faire ses démarches en ligne, faire un cv, ... Jusqu'à apprendre le développement web. <br/>\
-				Je suis actuellement assistante de formation sur un formation certifiante (titre RNCP) de Développeur Web et Web Mobile",
+				Je suis actuellement assistante de formation sur la formation certifiante (titre RNCP) de Développeur Web et Web Mobile",
 			],
 
 			missions: [
@@ -28,7 +66,7 @@ module.exports = {
 		{
 			enteprise: "Koya",
 			poste: "Développeuse Web FullStack JS - Freelance",
-			date: "mai 2021 - à ce jour",
+			date: "mai 2021 - novembre 2021",
 			website: "https://www.koya-app.fr",
 			description: [
 				"Après avoir effectué mon stage de fin d'étude chez Koya (voir description du poste suivant), j'ai eu la chance de pouvoir continuer à mi-temps en freelance.",
@@ -53,7 +91,7 @@ module.exports = {
 		{
 			enteprise: "Koya",
 			poste: "Développeuse Web FullStack JS - Stage",
-			date: "octobre 2020 - à ce jour",
+			date: "octobre 2020 - avril 2021",
 			website: "https://www.koya-app.fr",
 			description: [
 				"Koya est une start-up dédiée à l’accompagnement des particuliers dans leur transition écologique – <a href='https://koya-app.fr' target='_blank'>https://koya-app.fr</a> <br/>\
